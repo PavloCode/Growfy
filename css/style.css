@@ -483,16 +483,18 @@
     
     .advantages-item-text::before {
         content: '';
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        background-image: url('/img/checked.svg');
+        display: inline-block;
+        background-image: url('../img/checked.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        width: 32px;
+        height: 32px;
+        position: absolute;
         left: -5px;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 100;
     }
     
     .advantages-images-1 {
@@ -909,7 +911,7 @@
     /*******************  10. Start CSS ***************** */
     /****************************************************** */
     
-    .start .container {
+    .start-inner {
         background: #81818b1a;
         border-radius: 30px;
         display: flex;
@@ -958,7 +960,7 @@
             padding-top: 22px;
             padding-bottom: 50px;
         }
-        .start .container {
+        .start-inner {
             flex-direction: column;
             justify-content: center;
         }
@@ -969,7 +971,7 @@
     }
     
     @media(max-width:767.98px) {
-        .start .container {
+        .start-inner {
             align-items: normal;
         }
         .start-actions {
