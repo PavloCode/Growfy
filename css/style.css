@@ -918,6 +918,7 @@
         min-height: 256px;
         align-items: center;
         justify-content: space-between;
+        padding: 15px;
     }
     
     .start-content {
